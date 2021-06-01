@@ -1,0 +1,125 @@
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="link-group">
+      <a href="#" class="govuk-link text-spacing">Login</a>
+      <a href="#" class="govuk-link">createaccount</a>
+    </div>
+  </div>
+</div>
+
+<main role="main" id="content">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+          <h1 class="gem-c-title__text govuk-heading-xl">
+            Dartford Crossing <br />
+            Dart Charge
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-margin-bottom-6">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body-s govuk-!-font-size-16">
+          If you have used the Dartford Crossing and would like to manage your
+          payments, please enter your vehicle registration number below.
+        </p>
+        <p class="govuk-body-s govuk-!-font-size-16">
+          You have until
+          <span class="govuk-!-font-weight-bold">midnight the day after</span>
+          you cross to pay for a crossing.
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <div class="trafix-box">
+          <h3 class="govuk-heading-s">Traffic Update</h3>
+          <p class="govuk-body-s">
+            There are currently no delays northbound or southbound.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <!---banner start--->
+        <div class="govuk-cookie-banner" data-nosnippet role="region">
+          <div class="govuk-cookie-banner__message govuk-width-container">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <div class="banner-wrapper">
+                  <ul
+                    class="
+                      govuk-list govuk-list--bullet
+                      govuk-!-padding-bottom-2
+                    "
+                  >
+                    <li
+                      class="govuk-!-font-weight-bold govuk-!-margin-bottom-2"
+                    >
+                      Set up account
+                    </li>
+                    <li
+                      class="govuk-!-font-weight-bold govuk-!-margin-bottom-2"
+                    >
+                      Pay for using the Dartford Crossing
+                    </li>
+                  </ul>
+                  <form>
+                    <div class="form-group mini one-row">
+                      <label class="form-label" for="RegistrationNumber"
+                        >Enter your vehicle registration number
+                      </label>
+                      <input
+                        class="form-control form-control-1-2 control-right"
+                        type="text"
+                        id="RegistrationNumber"
+                        name="registration"
+                      />
+                      <button
+                        class="govuk-button"
+                        role="confirm Registration Number"
+                      >
+                        confirm
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---banner end-->
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Charges (6am-10pm)
+          </caption>
+          <thead class="govuk-table__head govuk-!-font-size-14">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Type of vehicle</th>
+              <th scope="col" class="govuk-table__header">One-off payment</th>
+              <th scope="col" class="govuk-table__header">
+                Automatic payments
+              </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body govuk-!-font-size-14">
+            <tr class="govuk-table__row" *ngFor="let vehicle of tableList">
+              <td scope="row" class="govuk-table__cell">
+                {{ vehicle?.vehicleType }}
+              </td>
+              <td class="govuk-table__cell">
+                {{ vehicle?.paymentType }}
+              </td>
+              <td class="govuk-table__cell">
+                {{ vehicle?.paymentWeek }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,2 +1,61 @@
 //* You can add global styles to this file, and also import other style files */
 @import "node_modules/govuk-frontend/govuk/all";
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"),
+    local("Helvetica");
+}
+
+.form-label {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 640px) {
+  .form-label {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.form-control {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-size-adjust: 0.5;
+  width: 50%;
+  padding: 0.4rem;
+  background-color: #fff;
+  //border: 2px solid #6f777b;
+}
+
+@media (min-width: 641px) {
+  .form-control {
+    font-size: 19px;
+    line-height: 1.3157894737;
+  }
+}
+.form-control-1-2 {
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (min-width: 641px) {
+  .form-control-1-2 {
+    width: 60%;
+  }
+}

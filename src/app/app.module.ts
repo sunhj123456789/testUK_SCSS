@@ -6,6 +6,7 @@ import { ShareModule } from './shared/share.module';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardPageComponent } from '../app/dashboard/dashboard-page/dashboard-page.component';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: AppComponent },
@@ -13,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     DashboardModule,
