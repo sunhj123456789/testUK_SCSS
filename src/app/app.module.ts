@@ -7,7 +7,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardPageComponent } from '../app/dashboard/dashboard-page/dashboard-page.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { HomeComponent } from './home/home.component';
-// import { DashboardModule } from './dashboard/dashboard.module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,7 +20,7 @@ const routes: Routes = [
     ShareModule,
     RouterModule.forRoot(routes),
   ],
-  declarations: [AppComponent, DashboardPageComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
