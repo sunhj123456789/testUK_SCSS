@@ -1,1 +1,143 @@
-<p>dashboard-page works!</p>
+<app-header></app-header>
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="#" class="govuk-back-link">Back</a>
+      <a href="#" class="govuk-link">Logout</a>
+    </div>
+  </div>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Dart Charge Account Dashboard</h1>
+
+        <div class="focus">
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              <span class="govuk-warning-text">
+                There is an outstanding charge on this account.</span
+              >
+            </strong>
+          </div>
+          <p class="govuk-body">
+            There is an outstanding charge of <strong>£2.50 </strong> for 1
+            crossing. You have until midnight <strong>15th Aug 2019 </strong> to
+            pay this.
+          </p>
+          <br />
+          <button class="govuk-button" data-module="govuk-button">
+            Pay Now
+          </button>
+        </div>
+
+        <div class="govuk-grid-row govuk-!-margin-top-9">
+          <div class="govuk-grid-column-full">
+            <p class="govuk-heading-xl">Your Account</p>
+
+            <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                <a class="govuk-link" href="#">Payment settings</a>
+              </p>
+            </div>
+
+            <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                <a class="govuk-link" href="#">Add/remove vehicles</a>
+              </p>
+            </div>
+
+            <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                <a class="govuk-link" href="#">Crossings and payment history</a>
+              </p>
+            </div>
+
+            <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                <a class="govuk-link" href="#">PCN History</a>
+              </p>
+            </div>
+
+            <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                <a class="govuk-link" href="#">Change Personal Details</a>
+              </p>
+            </div>
+
+            <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                <a class="govuk-link" href="#">Notification Preferences</a>
+              </p>
+            </div>
+
+            <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                <a class="govuk-link" href="#">Contact Dart Charge</a>
+              </p>
+            </div>
+
+            <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                <a class="govuk-link" href="#">Charges and Fine Information</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <div class="govuk-grid-row traffic-update-wiget">
+          <div class="govuk-grid-column-full">
+            <h2 class="govuk-heading-m">Traffic Updates</h2>
+            <p class="govuk-body">
+              There are currently no delays northbound or southbound.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="govuk-grid-row acct-balance-info">
+          <div class="govuk-grid-column-full">
+            <p class="govuk-body"><b>Account number:</b>178560043</p>
+            <p class="govuk-body"><b>Balance:</b>£0.00</p>
+            <p class="govuk-body"><b>Payment method:</b>Manual</p>
+          </div>
+        </div>
+        <br />
+        <div class="govuk-grid-row automatic-payment-info">
+          <div class="govuk-grid-column-full">
+            <p class="govuk-body">
+              <strong
+                >Set up automatic payments for discounted rates and reduce the
+                risk of receiving fines
+              </strong>
+            </p>
+            <a class="govuk-link govuk-!-margin-botton-9" href="#">
+              Find Out More
+            </a>
+
+            <div class="govuk-checkboxes__item govuk-checkboxes--small">
+              <input
+                class="govuk-checkboxes__input"
+                id="show-again"
+                name="show-again"
+                type="checkbox"
+                value="no"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="show-again"
+              >
+                Don't Show This Again
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<app-footer></app-footer>

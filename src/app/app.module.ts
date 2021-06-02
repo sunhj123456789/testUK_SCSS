@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardPageComponent } from '../app/dashboard/dashboard-page/dashboard-page.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { HomeComponent } from './home/home.component';
+// import { DashboardModule } from './dashboard/dashboard.module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,13 +15,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     DashboardModule,
     ShareModule,
     RouterModule.forRoot(routes),
   ],
+  declarations: [AppComponent, DashboardPageComponent, HomeComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
