@@ -1,51 +1,6 @@
-<div id="header-page" class="govuk-width-container">
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
-      <h3 class="govuk-heading-m">Home</h3>
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Purpose</h3>
-      <p class="govuk-body-s govuk-!-font-size-14">
-        The proposed landing page for the Dartford Crossing charge. The "Pay or
-        challenge a PCN" button goes to Package B. The Traffic Update panel has
-        live information.
-      </p>
-    </div>
-
-    <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
-        Variations and additional notes
-      </h3>
-      <p class="govuk-body-s govuk-!-font-size-14 govuk-!-margin-bottom-1">
-        For the interactive prototype, select what page the 'Confirm' button
-        (below) takes you to next:
-      </p>
-      <div class="govuk-form-group">
-        <select class="govuk-select selecct -box" id="sort" name="sort">
-          <option value="published" class="option-box">
-            Have an account,but no outstanding charge
-          </option>
-          <option value="updated" selected class="option-box">
-            Have an account,but outstanding charge
-          </option>
-          <option value="views" class="option-box">
-            Donot have an account,but no outstanding charge
-          </option>
-          <option value="comments" class="option-box">
-            Donot have an account,but have an outstanding charge
-          </option>
-        </select>
-      </div>
-    </div>
-  </div>
-</div>
 <!---header-->
-<app-header></app-header>
-<app-home></app-home>
-<app-footer></app-footer>
+<router-outlet></router-outlet>
+
 <!---header end-->
 <!---body Information-->
 
