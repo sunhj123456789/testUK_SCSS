@@ -24,7 +24,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     BrowserModule,
-    DashboardModule,
+    //DashboardModule,
     ShareModule,
     RouterModule.forRoot(routes),
   ],
