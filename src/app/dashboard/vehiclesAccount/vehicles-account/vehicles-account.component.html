@@ -1,0 +1,98 @@
+<app-header></app-header>
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="#" class="govuk-link">Home</a>
+      <a href="#" class="govuk-link" style="float: right">Logout</a>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="#" class="govuk-back-link">Back</a>
+    </div>
+  </div>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">Dart Charge Account</h1>
+
+        <div class="govuk-grid-row govuk-!-margin-top-9">
+          <div class="govuk-grid-column-full">
+            <h2 class="govuk-heading-l">Add/remove vehicles</h2>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full">
+          <table class="govuk-table">
+            <caption class="govuk-table__caption govuk-table__caption--m">
+              Your vehicles
+            </caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Reg. number</th>
+                <th scope="col" class="govuk-table__header">Class</th>
+                <th scope="col" class="govuk-table__header">Make</th>
+                <th scope="col" class="govuk-table__header">Model</th>
+                <th scope="col" class="govuk-table__header">Vehicle plan</th>
+                <th scope="col" class="govuk-table__header">Date added</th>
+                <th scope="col" class="govuk-table__header">Date expires</th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">PN57XGY</th>
+                <td class="govuk-table__cell">B</td>
+                <td class="govuk-table__cell">Volkswagen</td>
+                <td class="govuk-table__cell">Polo</td>
+                <td class="govuk-table__cell">Standard</td>
+                <td class="govuk-table__cell">27/05/2019</td>
+                <td class="govuk-table__cell">-</td>
+                <td
+                  class="govuk-table__cell govuk-link"
+                  style="cursor: pointer"
+                >
+                  Remove
+                </td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">PN57XGY</th>
+                <td class="govuk-table__cell">B</td>
+                <td class="govuk-table__cell">Volkswagen</td>
+                <td class="govuk-table__cell">Polo</td>
+                <td class="govuk-table__cell">Standard</td>
+                <td class="govuk-table__cell">27/05/2019</td>
+                <td class="govuk-table__cell">-</td>
+                <td
+                  class="govuk-table__cell govuk-link"
+                  style="cursor: pointer"
+                >
+                  Remove
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="govuk-button-group">
+            <button
+              class="govuk-button govuk-button--secondary"
+              data-module="govuk-button"
+            >
+              Add Another Vehicle
+            </button>
+          </div>
+
+          <div class="govuk-button-group govuk-!-margin-top-9">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<app-footer></app-footer>
